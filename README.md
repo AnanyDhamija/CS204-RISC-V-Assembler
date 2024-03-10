@@ -37,8 +37,8 @@ Our project supports below mentioned instructions:
 1. C++  
 2. Assembly Language (RISC V ISA)  
 
-`input.asm` file: File that need to be converted into Machine Code.    
-`output.mc` file:  File in which the output of program(Machine Code) is given.   
+`test.asm` file: File that need to be converted into Machine Code.    
+`test.mc` file:  File in which the output of program(Machine Code) is given.   
 
 ## General Instructions To Run Locally
 
@@ -56,8 +56,8 @@ Our project supports below mentioned instructions:
     ```bash
     ./a.out
     ```
-4. You are ready with machine code in `output.mc` file, which includes the memory segment as well.
+4. You are ready with machine code in `test.mc` file, which includes the memory segment as well.
 
 ### Running locally on device after downloading the files:  
-- You must keep input.asm and main.cpp in the same folder and then run main.cpp.
-- The output will be generated in the file named output.mc.
+- You must keep test.asm and main.cpp in the same folder and then run main.cpp.
+- The output will be generated in the file named test.mc.
