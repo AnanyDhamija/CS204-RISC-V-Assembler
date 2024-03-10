@@ -509,7 +509,12 @@ string UJ_type(vector<string> &components, ll pc) {
 
 string converter(string input, int digits) {
     int n = input.size();
-    int number = stoi(input);
+    int number;
+    if (input.substr(0, 2) == "0x") {
+        number = stoi(input.substr(2), nullptr, 16);
+    }else {
+        number = stoi(input);
+    }
     stringstream ss;
     ss << hex << number;
     string ans = ss.str();
