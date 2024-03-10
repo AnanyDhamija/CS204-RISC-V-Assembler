@@ -554,7 +554,6 @@ void datasegment(int &contains) {
             istringstream iss(str);
             vector<string> components;
             while (getline(iss, token, ' ')) {
-                cout<<token<<endl;
                 token.erase(remove(token.begin(), token.end(), ','), token.end());
                 token.erase(remove(token.begin(), token.end(), ' '), token.end());
                 if (token.size() != 0) {
@@ -591,7 +590,7 @@ void datasegment(int &contains) {
                                 if (error_converter == 0) {
                                     for (int j = 3; j >= 0; j--) {
                                         string address = decimal_to_hex1(data_segment);
-                                        string b = a.substr(2*j+1, 2);
+                                        string b = a.substr(2*j, 2);
                                         b = "0x" + b;
                                         memory[address] = b;
                                         data_segment += 1; 
@@ -608,7 +607,7 @@ void datasegment(int &contains) {
                                 if (error_converter == 0) {
                                     for (int j = 1; j >= 0; j--) {
                                         string address = decimal_to_hex1(data_segment);
-                                        string b = a.substr(2*j+1, 2);
+                                        string b = a.substr(2*j, 2);
                                         b = "0x" + b;
                                         memory[address] = b;
                                         data_segment += 1; 
@@ -625,7 +624,7 @@ void datasegment(int &contains) {
                                 if (error_converter == 0) {
                                     for (int j = 7; j >= 0; j--) {
                                         string address = decimal_to_hex1(data_segment);
-                                        string b = a.substr(2*j+1, 2);
+                                        string b = a.substr(2*j, 2);
                                         b = "0x" + b;
                                         memory[address] = b;
                                         data_segment += 1; 
@@ -683,7 +682,7 @@ void datasegment(int &contains) {
                                 if (error_converter == 0) {
                                     for (int j = 3; j >= 0; j--) {
                                         string address = decimal_to_hex1(data_segment);
-                                        string b = a.substr(2*j+1, 2);
+                                        string b = a.substr(2*j, 2);
                                         b = "0x" + b;
                                         memory[address] = b;
                                         data_segment += 1; 
@@ -700,7 +699,7 @@ void datasegment(int &contains) {
                                 if (error_converter == 0) {
                                     for (int j = 1; j >= 0; j--) {
                                         string address = decimal_to_hex1(data_segment);
-                                        string b = a.substr(2*j+1, 2);
+                                        string b = a.substr(2*j, 2);
                                         b = "0x" + b;
                                         memory[address] = b;
                                         data_segment += 1; 
@@ -717,7 +716,7 @@ void datasegment(int &contains) {
                                 if (error_converter == 0) {
                                     for (int j = 7; j >= 0; j--) {
                                         string address = decimal_to_hex1(data_segment);
-                                        string b = a.substr(2*j+1, 2);
+                                        string b = a.substr(2*j, 2);
                                         b = "0x" + b;
                                         memory[address] = b;
                                         data_segment += 1; 
